@@ -1,0 +1,37 @@
+
+#sw{
+	color: red;
+	box-sizing:20;
+	background-color: green;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+button,
+input,
+optgroup,
+textarea {
+  
+  color: blue;
+}
+h3{
+	top:15;
+}
+h1{
+	color:blue;
+
+}
+body{
+	background-color: orange;
+
+
+}
+input[type="submit"], input[type="reset"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+
+}
