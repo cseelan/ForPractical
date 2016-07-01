@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to form validation</title>
+	<script type="text/javascript">
+			var emailId=document.myform.email.value;
+			 atpos=emailId.indexOf("@");
+			 dotpos=emailId.lastindexOf(".");
+			if(atpos<1||(dotpos-atpos<2)){
+				alert("please enter correct email id!!");
+				document.myform.email.focus();
+				return false;
+			}
+			return true;
+	</script>
+	</head>
+<body>
+	<form name="myform" action="" method="GET">
+			<fieldset>
+			<div class="sw">
+				Name     :<input type="text" name="name"><br><br>
+				Age      :<input type="text" name="age"><br><br>
+				Gender   :<input type="radio" name="mf">Male<input type="radio" name="mf">Female<br><br>
+				Interests:<input type="checkbox" name="done">Playing games
+				<input type="checkbox" name="done">Watching movie
+				<input type="checkbox" name="done">Coding programs<br><br>
+				Email ID:<input type="text" name="email"><br><br>
+				Country  :<select name="dropdown"><option value="India" selected>India</option><br><br>
+				<option value="c2" >America</option>
+				<option value="c3" >China</option>
+				<option value="c4" >Italy</option>
+				<input type="submit" name="Submit" value="Submit">
+				<input type="reset" name="reset" value="Clear">
+			</div>
+			</fieldset>
+		</form>
+</body>
+</html>
