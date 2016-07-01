@@ -3,19 +3,17 @@
 <head>
 	<title>Welcome to form validation</title>
 	<script type="text/javascript">
-			var emailId=document.myform.email.value;
-			 atpos=emailId.indexOf("@");
-			 dotpos=emailId.lastindexOf(".");
-			if(atpos<1||(dotpos-atpos<2)){
-				alert("please enter correct email id!!");
-				document.myform.email.focus();
-				return false;
-			}
-			return true;
+			function validateForm() {
+   				var x = document.forms["myform"]["name","age","mf","done"].value;
+  				if (x == null || x == "") {
+       			alert("Fields should not be empty");
+       		    return false;
+    			}
+			}		
 	</script>
 	</head>
 <body>
-	<form name="myform" action="" method="GET">
+	<form name="myform" action="" method="GET" onsubmit="return validateForm()">
 			<fieldset>
 			<div class="sw">
 				Name     :<input type="text" name="name"><br><br>
