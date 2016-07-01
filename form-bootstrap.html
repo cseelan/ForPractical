@@ -3,37 +3,64 @@
 <head>
   <title>Bootstrap--seelan</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
-	<form name="myform" action="" role="form" method="GET" onsubmit="return validateForm()">
+	<form name="myform" action="" method="GET" onsubmit="return validateForm()">
 			<fieldset>
-			<div class="sw">
+			<div class="row">
+			<div class="well">
 				<label for="name">Enter your name:</label>
-				<input type="text" name="name"><br><br>
+				<input type="text" class="form-group" name="name"><br>
+			</div>
+			</div>
+			<div class="row">
+			<div class="well">
 				<label for="age">Enter your Age:</label>
-				<input type="text" name="age"><br><br>
+				<input type="text" class="form-group" name="age"><br>
+			</div>
+			</div>
+			<div class="row">
+			<div class="well">
 				<label for="mf">Gender:</label>
-				<input type="radio" name="mf">Male<input type="radio" name="mf">Female<br><br>
+				<input type="radio" class="form-group" name="mf">Male<input type="radio" name="mf">Female
+			</div>
+			</div>
+			<div class="row">
+			<div class="well">
 				<label for="name">Interests:</label>
 				<input type="checkbox" name="done">Playing games
 				<input type="checkbox" name="done">Watching movie
-				<input type="checkbox" name="done">Coding programs<br><br>
+				<input type="checkbox" name="done">Coding programs
+			</div>
+			</div>
+			<div class="row">
+			<div class="well">
 				<label for="email">Enter your Email-Id:</label>
-				<input type="text" name="email"><br><br>
+				<input type="text" name="email">
+			</div>
+			</div>
+			<div class="row">
+			<div class="well">
 				<label for="">Country:</label>
-				<select name="dropdown"><option value="India" selected>India</option>
-				<option value="c2" >America</option>
-				<option value="c3" >China</option>
-				<option value="c4" >Italy</option><br>
-				<div class="">
-				<input type="submit" class="btn-success" name="Submit" value="Submit">
-				<input type="reset" name="reset" class="btn-danger" value="Clear">
-				</div>
+				<ul class="dropdown-menu dropdown-toggle" data-toggle="dropdown" role="menu">
+				<li>India</li>
+				<li>UK</li>
+				<li>Japan</li>
+				<li>Australia</li>
+				<li>USA</li>
+				</ul>
+			</div>
+			</div>
+			<hr>
+			<div class="row">
+				<input type="submit" class="btn-success btn-large" name="Submit" value="Submit">
+				<input type="reset" name="reset" class="btn-danger btn-large" value="Clear">
+			</div>
 			</div>
 			</fieldset>
 		</form>
