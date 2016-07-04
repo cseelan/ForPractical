@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <title>Bootstrap--seelan</title>
+  <style type="text/css">
+  	.sup
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=2">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -9,72 +12,71 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="container well">
 	<form name="myform" action="" method="GET" onsubmit="return validateForm()">
+	<div class="sup">
+	<h4>P3SOLUTIONS-Registeration Form</h4>
+	</div>
 			<fieldset>
 			<div class="row">
-			<div class="well">
-				<label for="name">Enter your name:</label>
+				<label for="name">Enter your name:</label><br>
 				<input type="text" class="form-group" name="name"><br>
 			</div>
-			</div>
 			<div class="row">
-			<div class="well">
-				<label for="age">Enter your Age:</label>
+			
+				<label for="age">Enter your Age:</label><br>
+
 				<input type="text" class="form-group" name="age"><br>
-			</div>
-			</div>
-			<div class="row">
-			<div class="well">
-				<label for="mf">Gender:</label>
-				<input type="radio" class="form-group" name="mf">Male<input type="radio" name="mf">Female
-			</div>
+			
 			</div>
 			<div class="row">
-			<div class="well">
-				<label for="name">Interests:</label>
-				<input type="checkbox" name="done">Playing games
-				<input type="checkbox" name="done">Watching movie
-				<input type="checkbox" name="done">Coding programs
-			</div>
-			</div>
+			
+				<label for="mf">Gender:</label><br>
+				<input type="radio" class="form-group" name="mf">&nbsp;Male &nbsp;
+				<input type="radio" name="mf">&nbsp;Female
+			
+			</div><br>
 			<div class="row">
-			<div class="well">
-				<label for="email">Enter your Email-Id:</label>
+			
+				<label for="done">Interests:</label><br>
+				<input type="checkbox" name="done">&nbsp;Playing games &nbsp;
+				<input type="checkbox" name="done">&nbsp;Watching movie &nbsp;
+				<input type="checkbox" name="done">&nbsp;Coding programs
+			
+			</div><br>
+			<div class="row">
+			
+				<label for="email">Enter your Email-Id:</label><br>
 				<input type="text" name="email">
-			</div>
-			</div>
+		
+			</div><br>
 			<div class="row">
-			<div class="well">
-				<label for="">Country:</label>
-				<ul class="dropdown-menu dropdown-toggle" data-toggle="dropdown" role="menu">
-				<li>India</li>
-				<li>UK</li>
-				<li>Japan</li>
-				<li>Australia</li>
-				<li>USA</li>
-				</ul>
-			</div>
-			</div>
-			<hr>
+			
+				<label for="dropdown">Country:</label>
+				<select name="dropdown">
+				<option>India</option>
+				<option>UK</option>
+				<option>India</option>
+				<option>UK</option>
+				<option>India</option>
+				<option>UK</option>
+				</select>
+			</div><br>
 			<div class="row">
-				<input type="submit" class="btn-success btn-large" name="Submit" value="Submit">
-				<input type="reset" name="reset" class="btn-danger btn-large" value="Clear">
-			</div>
+				<input type="submit" class="btn-large" name="Submit" value="Submit"> &nbsp;
+				<input type="reset" name="reset" class="btn-large" value="Clear">
 			</div>
 			</fieldset>
 		</form>
-		</div>
-	<script type="text/javascript">
+	</div>
+		<script type="text/javascript">
 		function validateForm() {
    				var x = document.forms["myform"]["name","age"].value;
   				if (x == null || x == "") {
        			window.alert("Fields should not be empty, Give some valid data");
        		    return false;
     			}
-    			else{
-    				alert("Details verified... Go on");
-    			}
+    			
 			}	
 	</script>
 </body>
