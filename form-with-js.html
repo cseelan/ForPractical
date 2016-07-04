@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap--seelan</title>
+  <style type="text/css">
+  	.sup
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container well">
+	<form name="myform" action="" method="get" onsubmit="return validateForm()">
+	<div class="sup">
+	<h4>P3SOLUTIONS-Registration Form</h4>
+	</div>
+			<fieldset>
+			<div class="row">
+				<label for="name">Enter your name:</label><br>
+				<input type="text" class="form-group" name="name"><br>
+			</div>
+			<div class="row">
+			
+				<label for="age">Enter your Age:</label><br>
+
+				<input type="text" class="form-group" name="age"><br>
+			
+			</div>
+			<div class="row">
+			
+				<label for="mf">Gender:</label><br>
+				<input type="radio" class="form-group" name="mf">&nbsp;Male &nbsp;
+				<input type="radio" name="mf">&nbsp;Female
+			
+			</div><br>
+			<div class="row">
+			
+				<label for="done">Interests:</label><br>
+				<input type="checkbox" name="done">&nbsp;Playing games &nbsp;
+				<input type="checkbox" name="done">&nbsp;Watching movie &nbsp;
+				<input type="checkbox" name="done">&nbsp;Coding programs
+			
+			</div><br>
+			<div class="row">
+			
+				<label for="email">Enter your Email-Id:</label><br>
+				<input type="text" name="email">
+		
+			</div><br>
+			<div class="row">
+			
+				<label for="dropdown">Country:</label>
+				<select name="dropdown">
+				<option>India</option>
+				<option>UK</option>
+				<option>India</option>
+				<option>UK</option>
+				<option>India</option>
+				<option>UK</option>
+				</select>
+			</div><br>
+			<div class="row">
+				<input type="submit" class="btn-large" name="Submit" value="Submit"> &nbsp;
+				<input type="reset" name="reset" class="btn-large" value="Clear">
+			</div>
+			</fieldset>
+		</form>
+	</div>
+		<script type="text/javascript">
+		function validateForm() {
+   				var x = document.forms["myform"]["name","age"].value;
+  				if (x == null || x == "") {
+       			window.alert("Fields should not be empty, Give some valid data");
+       		    return false;
+    			}
+    			
+			}
+	</script>
+	
+	<hr>
+	<div class="container">
+  	<button id="butto" class="btn btn-info btn-block">CLICK HERE TO VIEW THE MESSAGE OF THE DAY</button>
+	</div>
+	<p class="well" align="center" hidden>
+		The best preparation for tomorrow is doing your best today. 
+
+		H. Jackson Brown, Jr.
+	</p>
+	<script>
+		$(function(){
+			$('#butto').on('click',function(){
+			$('p').fadeToggle(200);	
+			});
+			
+		});
+	</script>
+</body>
+</html>
+
