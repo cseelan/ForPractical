@@ -13,7 +13,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 <body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid" style="background-color:#00ccff">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand active" href="#">PLATFORM3SOLUTIONS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" id="su" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="https://login.microsoftonline.com/"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	<div class="container well">
+	<h2>Register into P3SOLUTIONS</h2>
+	<hr>
+	<div class="reg" hidden>
 	<form name="myform" action="" method="get" onsubmit="return validateForm()">
 	<div class="sup">
 	<h4>P3SOLUTIONS-Registration Form</h4>
@@ -69,6 +91,7 @@
 			</div>
 			</fieldset>
 		</form>
+		</div>
 	</div>
 		<script type="text/javascript">
 		function validateForm() {
@@ -92,7 +115,7 @@
 	</p>
 	<p id="p1" align="center" hidden>Please enter your full name...</p>
 	<p id="p2" align="center" hidden="">Please enter your Age...</p>
-	<p id="p3" align="center" hidden="">Please enter your correct email id...</p>
+	<p id="p3" align="center" hidden="">Please enter your correct email id...</p><br/>
 	<script>
 		$(function(){
 			$('#butto').on('click',function(){
@@ -107,8 +130,15 @@
 			$('#em').on('mouseover',function(){
 				$('#p3').fadeToggle(100);
 			});
+			$('h2').on('click',function(){
+				$('.reg').slideToggle(300);
+			});
+			$('#su').on('click',function(){
+				$('.reg').slideToggle(300);
+			});
 		});
 	</script>
+	
 </body>
 </html>
 
