@@ -21,13 +21,13 @@
 			<fieldset>
 			<div class="row">
 				<label for="name">Enter your name:</label><br>
-				<input type="text" class="form-group" name="name"><br>
+				<input type="text" class="form-group" id="nme" name="name"><br>
 			</div>
 			<div class="row">
 			
 				<label for="age">Enter your Age:</label><br>
 
-				<input type="text" class="form-group" name="age"><br>
+				<input type="text" id="ag" class="form-group" name="age"><br>
 			
 			</div>
 			<div class="row">
@@ -48,7 +48,7 @@
 			<div class="row">
 			
 				<label for="email">Enter your Email-Id:</label><br>
-				<input type="text" name="email">
+				<input type="text" name="email" id="em">
 		
 			</div><br>
 			<div class="row">
@@ -85,17 +85,28 @@
 	<div class="container">
   	<button id="butto" class="btn btn-info btn-block">CLICK HERE TO VIEW THE MESSAGE OF THE DAY</button>
 	</div>
-	<p class="well" align="center" hidden>
+	<p class="well" id="p0" align="center" hidden>
 		The best preparation for tomorrow is doing your best today. 
 
 		H. Jackson Brown, Jr.
 	</p>
+	<p id="p1" align="center" hidden>Please enter your full name...</p>
+	<p id="p2" align="center" hidden="">Please enter your Age...</p>
+	<p id="p3" align="center" hidden="">Please enter your correct email id...</p>
 	<script>
 		$(function(){
 			$('#butto').on('click',function(){
-			$('p').fadeToggle(200);	
+			$('#p0').fadeToggle(200);	
 			});
-			
+			$('#nme').on('mouseover',function(){
+				$('#p1').fadeToggle(100);
+			});
+			$('#ag').on('mouseover',function(){
+				$('#p2').fadeToggle(100);
+			});
+			$('#em').on('mouseover',function(){
+				$('#p3').fadeToggle(100);
+			});
 		});
 	</script>
 </body>
