@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script>
+		var app = angular.module("myApp", []);
+		app.controller("myCtrl", function($scope) {
+    	
+		});
+	</script>
+<body ng-app="myApp" ng-init="myCol='lightblue'">
+	<p>Change the value of the input field:</p>
+	<div class="well">
+		<input  ng-model="myCol" ><br>
+		<button class="btn btn-lg" ng-model="myCol">Color Changer</button><br>
+		<textarea class="form-control" style="background-color:{{myCol}} " rows="3"></textarea>
+	</div>
+	<section>
+		<ul class="nav nav-pills">
+			<li><a href ng-click="tab = 1">Description</a></li>
+			<li><a href ng-click="tab = 2">Rating</a></li>
+			<li><a href ng-click="tab = 3">Reviews</a></li>
+		</ul>
+		{{tab}}
+	</section >
+	<div class="panel" ng-show="tab === 1">
+		<h3 style="color:{{myCol}}">Description</h3>
+	</div>
+	<div class="panel" ng-show="tab === 2">
+		<h3>Rating</h3>
+	</div>
+	<div class="panel" ng-show="tab === 3">
+		<h3>Reviews</h3>
+	</div>
+</body>
+</html>
+

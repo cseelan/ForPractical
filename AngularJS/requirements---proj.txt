@@ -1,0 +1,19 @@
+1. colour candies project
+
+2. design a webpage- index
+	2.1 name and phone number.
+	2.2 submit button
+	2.3 some good candy background
+	2.4 left corner- company name
+	2.5 right corner
+		2.5.1 two buttons(slidedown effect)
+		2.5.2 one is notify me when new candy avail. another is 		      show me some goood candy.
+
+3. while clicking on the 2.5.2(notify) it wil come to the index page and    the name and number wil come under slidedown effect.
+
+4. when submit next page will be visible, that contains,
+	4.1 some filters(brand and price wise)
+	4.2 two text area, one is for input and the another one is for 	    output.
+	4.3 input area wil get the name of the candy.
+	    output area will display the image of the caandy.
+	4.4 some animations should be there.
